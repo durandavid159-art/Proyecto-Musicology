@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
 }
 #principal{
     display: flex;
@@ -17,9 +16,8 @@
     background-color: #2c2b2b;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 830px;
     padding: 11px;
     width: 99vw;
 }
@@ -72,6 +70,12 @@
     width: 99vw;  
 }
 
+.contenedorDos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contenedorDos h2{
     font-family: "Oswald", sans-serif;
     font-size: 40px;
@@ -86,11 +90,6 @@
     margin-left: 350px;
     margin-right: 350px;
     text-align: center;
-}
-.contenedorDos{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 /*fichas*/
@@ -177,7 +176,7 @@
 
 footer{
     background-color: #f76400;
-    width: 100%;
+    width: 99vw;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -188,5 +187,207 @@ footer p{
     color: white;
     font-size: 17px;
     font-family: "Montserrat", sans-serif;
+}
 
+/*Media queris*/
+
+@media (max-width: 1279px) {
+    .contenedorDos p {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .fichas {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 920px) {
+    #seccionUno {
+    height: 64vh;
+    }
+    #seccionUno h1 {
+        font-size: 60px;
+    }
+
+    .contenedor {
+    margin-left: 6%;
+    margin-right: 34%;
+    margin-bottom: 3%;
+    }
+
+    #seccionUno button {
+    font-size: 21px;
+    padding: 9px;
+    width: 258px;
+    margin-top: 20px;
+}
+    #seccionUno p {
+    font-size: 19px;
+    }
+
+    .fichas {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+    }
+
+    #seccionTres .contenedorDos p{
+        text-align: center;
+        margin: 20px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+#nav {
+        padding: 2%;
+    }
+
+#seccionUno{
+        height:61vh;
+    }
+
+.contenedor{
+        margin-bottom: 3%;
+        margin-right: 17%;
+    }
+
+#seccionUno h1 {
+        font-size: 48px;
+    }
+
+#seccionUno p {
+        font-size: 16px;
+    }
+
+#seccionUno button {
+    font-size: 17px;
+    padding: 9px;
+    width: 204px;
+    margin-top: 25px;
+    }
+
+    .contenedorDos h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    }
+
+    .contenedorDos p {
+        font-size: 20px;
+        margin: 3%;
+    }
+
+    .fichas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+    }
+
+    #seccionTres .contenedorDos h1 {
+    font-size: 35px;
+    margin-top: 32px;
+    }
+
+    #seccionTres .contenedorDos p {
+    margin: 30px;
+    text-align: center;
+    }
+
+    footer p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    
+}
+
+@media (max-width: 480px) {
+    #nav{
+            gap: 170px;
+            padding: 1%;
+        }
+
+    #seccionUno{
+            height:33vh;
+        }
+
+    .contenedor{
+            margin-bottom: 3%;
+            margin-right: 11%;
+            
+        }
+
+    #seccionUno h1 {
+            font-size: 30px;
+        }
+
+    #seccionUno p {
+            font-size: 13px;
+        } 
+        
+    #seccionUno button {
+        font-size: 12px;
+        margin-top: 19px;
+        width: 151px;
+        }
+
+    .contenedorDos h2 {
+        font-size: 26px;
+        }
+
+    .contenedorDos p {
+            font-size: 14px;
+            margin-top: 14px;
+            margin-bottom: 25px;
+        }
+
+    .fichas { 
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;                  
+        }
+
+    .fichaUno {   
+        height: 360px;
+        margin-bottom: 2%;
+        height: 290px;
+        }
+
+    .fichaUno img {
+        height: 63%;
+        }
+        
+    #seccionTres .contenedorDos h1 {
+        font-size: 30px;
+        margin-top: 40px;
+        }
+    
+    #seccionTres .contenedorDos p {
+        margin: 30px;
+        text-align: center;
+        font-size: 16px;
+        width: 77%;
+        }
+
+    #seccionTres .fichaUno img {
+        width: 31%;
+        height: 31%;
+        margin: 6%;
+        }
+
+    #seccionTres button {
+        font-size: 20px;
+        margin-top: 2px;
+        }
+
+    footer{
+        height: 60px;
+        }
+        
+        footer p{
+        font-size: 12px;    
+        }
 }
