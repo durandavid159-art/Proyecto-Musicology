@@ -192,14 +192,28 @@ footer p{
 /*Media queris*/
 
 @media (max-width: 1279px) {
-    .contenedorDos p {
-        margin-left: 150px;
-        margin-right: 150px;
+    .contenedor {
+    margin-left: 5%;
+    margin-bottom: 9%;
     }
 
+   .contenedorDos p {
+    margin-left: 200px;
+    margin-right: 200px;
+   }
+
     .fichas {
-        gap: 40px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     }
+
+    #seccionTres .contenedorDos p {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
 }
 
 @media (max-width: 920px) {
@@ -230,7 +244,7 @@ footer p{
     gap: 10px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap
+    flex-wrap: wrap;
     }
 
     #seccionTres .contenedorDos p{
@@ -298,10 +312,6 @@ footer p{
     footer p{
         text-align: center;
     }
-}
-
-@media (max-width: 480px) {
-    
 }
 
 @media (max-width: 480px) {
